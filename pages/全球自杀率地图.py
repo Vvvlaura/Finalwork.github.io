@@ -38,7 +38,7 @@ suicide_show=df.sort_values('Suicide rate(Both sexes)',ascending=False).style.ba
 st.write(suicide_show)
 
 #获取全球各国经纬度信息
-country = pd.read_csv('C:/Users/dell/Desktop/期末/input/world_country.csv')
+country = pd.read_csv('world_country.csv')
 #得到全球各国经纬度和自杀率的数据表格信息
 merged_df = pd.merge(country,df, on='Country', how='inner')[["Country","Suicide rate(Male)","Suicide rate(Female)","Suicide rate(Both sexes)","longitude","latitude"]]
 
