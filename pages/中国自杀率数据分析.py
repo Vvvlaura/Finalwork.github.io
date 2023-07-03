@@ -18,7 +18,7 @@ from streamlit_folium import st_folium
 import json
 
 #读取中国各省份自杀率csv文件
-china_suicide=pd.read_csv('C:/Users/dell/Desktop/期末/input/suicide_index.csv',encoding="gbk").set_index("Province")
+china_suicide=pd.read_csv('suicide_index.csv',encoding="gbk").set_index("Province")
 
 #访问中国各省份json文件
 #利用requests包中的get(url)函数，用于返回请求的响应
