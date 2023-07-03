@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 st.title("各国不同年龄段自杀率查询")
 #读取全球各国自杀率文件
-data=pd.read_csv("C:/Users/dell/Desktop/期末/input/master.csv")
+data=pd.read_csv("master.csv")
 #获取国家列表
 data1=data.drop_duplicates("country",keep="last",inplace=False)
 country_list=data1["country"].tolist()
