@@ -42,7 +42,7 @@ for i in range(len(province)):
     suicide_list.append((province[i],statistic[i]))
             
 #读取中国各省份经纬度文件
-province_coordinate = pd.read_csv('C:/Users/dell/Desktop/期末/input/China_states_coordinates.csv',encoding='gbk')
+province_coordinate = pd.read_csv('China_states_coordinates.csv',encoding='gbk')
 
 #将中国各省份的json文件转换成geodataframe
 #地理坐标系转换成EPSG:4326
