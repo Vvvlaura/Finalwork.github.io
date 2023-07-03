@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 st.title("自杀率和gdp相关性分析")
 fig, ax = plt.subplots()
 #读取各国自杀率文件
-df = pd.read_csv("C:/Users/dell/Desktop/期末/input/master.csv")
+df = pd.read_csv("master.csv")
 suicide_rate=pd.DataFrame(columns=["suicides_pop","gdp_per_capita"])
 #修改列名
 df.rename(columns={"suicides/100k pop":"suicides_pop","HDI for year":"HDI_for_year",
