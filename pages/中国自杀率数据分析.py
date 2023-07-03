@@ -103,7 +103,7 @@ g = folium.GeoJson(
 folium.LayerControl(collapsed=True).add_to(chinam)
 colormap.add_to(chinam)
 
-st.title("中国各省份自杀率地图")
+st.title("中国各省份自杀指数地图")
 st.markdown("基于百度指数关键词爬取")
 #显示中国各省份自杀率地图
 st_folium(chinam,width=1200,height=500)
