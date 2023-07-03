@@ -16,7 +16,7 @@ from streamlit_folium import st_folium
 
 st.title("全球男性和女性平均自杀率热点图")
 #读取全球各国自杀率文件
-df = pd.read_csv("C:/Users/dell/Desktop/期末/input/suicide.csv")
+df = pd.read_csv("suicide.csv")
 #修改列名
 df.columns = ['Country','Year','Probability of dying(Both sexes)','Probability of dying(Male)',
           'Probability of dying(Female)','Suicide rate(Both sexes)','Suicide rate(Male)','Suicide rate(Female)']
