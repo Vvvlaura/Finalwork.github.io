@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 st.title("各国不同性别自杀率查询")
 #读取各国自杀率文件
-df = pd.read_csv("C:/Users/dell/Desktop/期末/input/master.csv")
+df = pd.read_csv("master.csv")
 #修改列名
 df.rename(columns={"suicides/100k pop":"suicides_pop","HDI for year":"HDI_for_year",
               " gdp_for_year ($) ":"gdp_for_year"," gdp_per_capita ($) ":"gdp_per_capita",
